@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+$front_primary: 'cairo', sans-serif;
+$font_secondary: 'Noto Kufi Arabic', sans-serif;
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/wordpress/wp-content/themes/academy/assets/NotoKufiArabic-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+// @font-face {
+//     font-family: 'Noto Kufi Arabic', sans-serif;
+//     src: url('/wordpress/wp-content/themes/academy/assets/NotoKufiArabic-Bold.ttf') format('truetype');
+//     font-weight: bold;
+// }
