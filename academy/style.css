@@ -60,7 +60,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -955,10 +954,8 @@ textarea {
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
-@font-face {
-  font-family: 'Noto Kufi Arabic';
-  src: url("/wordpress/wp-content/themes/academy/assets/NotoKufiArabic-Regular.ttf") format("truetype");
-  font-weight: normal;
+a {
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -976,6 +973,30 @@ h6 {
 p,
 li {
   font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
