@@ -360,13 +360,13 @@ body,
 .widget-area {
     background: $color_header_links;
     width: 30%;
+    height: 100vh;
     float: right;
     padding: 2rem;
     padding-top: 3rem;
     overflow: hidden;
     word-break: normal;
     word-wrap: normal;
-    overflow: hidden;
 }
 
 .no-sidebar {
@@ -506,6 +506,7 @@ code {
  *
 */
 .site-footer {
+    width: 100%;
     text-align: center;
     margin-top: 1rem;
 }
@@ -874,16 +875,16 @@ p {
     margin: 0.2rem;
     position: absolute;
     font-family: $font_awesome;
-    content: '\f0d7';
-    vertical-align: middle;
+    content: '\f107';
+    font-weight: bold;
 }
 
 .page_item_has_children > a::after {
     margin: 0.2rem;
     position: absolute;
     font-family: $font_awesome;
-    content: '\f0d7';
-    vertical-align: middle;
+    content: '\f107';
+    font-weight: bold;
 }
 
 a.open::after {
