@@ -144,6 +144,7 @@ add_action('widgets_init', 'academy_widgets_init');
 function academy_scripts()
 {
 	wp_enqueue_style('academy-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+	wp_enqueue_style('academy-icon', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 	wp_enqueue_style('academy-style', get_stylesheet_uri(), array(), _S_VERSION);
 	wp_style_add_data('academy-style', 'rtl', 'replace');
 
@@ -155,15 +156,21 @@ function academy_scripts()
 }
 add_action('wp_enqueue_scripts', 'academy_scripts');
 
-function academy_resource_hints($url, $relation_type)
+function academy_resource_hints($urls, $relation_type)
 {
 	if (wp_style_is('academy-fonts', 'queue') &&  'preconnect' == $relation_type) {
-		$url[] = array(
-			'href' => 'https://fonts.googleapis.com',
+		$urls[] = array(
+			'href' => 'https://fonts.gstatic.com',
 			'crossorigin'
 		);
 	}
-	return $url;
+	if (wp_style_is('academy-icon', 'queue') &&  'preconnect' == $relation_type) {
+		$urls[] = array(
+			'href' => 'https://cdnjs.cloudflare.com',
+			'crossorigin'
+		);
+	}
+	return $urls;
 }
 add_filter('wp_resource_hints', 'academy_resource_hints', 1, 2);
 

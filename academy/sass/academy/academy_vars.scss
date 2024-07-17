@@ -1,7 +1,8 @@
 // @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
-
-$front_primary: 'cairo', sans-serif;
+$font_primary: 'cairo', sans-serif;
 $font_secondary: 'Noto Kufi Arabic', sans-serif;
+$font_awesome: 'Font Awesome 6 Free';
+$font_size: 1.6rem;
 
 @mixin htags($factore: 1rem) {
     h1 {
@@ -27,3 +28,27 @@ $font_secondary: 'Noto Kufi Arabic', sans-serif;
 a {
     text-decoration: none;
 }
+
+/* 
+*
+ Academy screen sizes
+*
+*/
+$x-large: 1200px;
+$large: 1024px;
+$medium: 950px;
+$small: 750px;
+$x-small: 460px;
+
+/* 
+*
+ Academy color
+*
+*/
+$color_primary: #616571;
+$color_text: #666;
+$color_header_links: #fff;
+$color_links: #616571;
+$color_links_hover: #e43f21;
+$color_border: #f2f2f2;
+$color_headings: #616571;
