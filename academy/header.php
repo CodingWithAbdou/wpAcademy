@@ -74,3 +74,9 @@
 				?>
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
+		<div class="header_image" id="header-image">
+			<?php if (is_front_page()) {
+				the_header_image_tag();
+			}
+			?>
+		</div>

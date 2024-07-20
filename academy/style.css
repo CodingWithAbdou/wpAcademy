@@ -1054,6 +1054,11 @@ h6 {
   opacity: 1;
 }
 
+.header_image img {
+  width: 100%;
+  height: 100%;
+}
+
 /* 
  *
  Header responsiveness
